@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>RECUPERAR CONTRASEÑA | EduLab</title>
+  <link rel="shortcut icon" href="images/eduLab1.png" width="1000" height="1000">
+
+      <link rel="stylesheet" href="css/stylerecordar.css">
+</head>
+<body>
+  <div class="login-wrap">
+  	<form action="scripts/validaremail.php" method="post" >
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Restaurar contraseña </label><br><br><br><br>
+		<!--<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" 
+		class="tab">Sign Up</label>-->
+		<div class="login-form">
+			<div class="sign-in-htm">
+				<div class="group">
+				<div class="group">
+					<label for="email" class="label">ESCRIBE EL EMAIL ASOCIADO A TU CUENTA PARA RECUPERAR TU CONTRASEÑA </label>
+                    <br>
+                        <br>
+                            <br>
+					<input id="email" name="email" type="email" class="input" required>
+				</div>
+			<br>
+				<div class="group">
+					<input href="validaremail.php" type="submit" class="button" value="ENVIAR">
+				</div>
+				<br>
+				<div class="foot-lnk">
+                    <br>
+                        <br>
+                            <br>
+				<a href="Iniciar.html"> ATRÁS </a>
+					<!--<a href="javascript:void(0);" onclick="window.open('Registrarse.html', 'popup', 'left=80px, top=200, width=900px, height=100px, toolbar=0, resizable=1')"  style="font-size:20px"> ¡REGÍSTRATE!</script></a>  -->
+				</div>
+			</div>
+		</div>
+	</div>
+	</form>
+  </div>
+  <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#frmRestablecer").submit(function(event){
+          event.preventDefault();
+          $.ajax({
+            url:'scripts/validaremail.php',
+            type:'post',
+            dataType:'json',
+            data:$("#frmRestablecer").serializeArray()
+          }).done(function(respuesta){
+            $("#mensaje").html(respuesta.mensaje);
+            $("#email").val('');
+          });
+        });
+      });
+    </script>
+</body>
+</html>

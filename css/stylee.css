@@ -1,0 +1,234 @@
+/*Menú estudiante*/
+body { margin: 0; background-color:#f0f8ff; 
+    font-family:"MICKEY";
+    src:  url('../fonts/MICKEY.TTF');
+    }    /*Fondo*/
+
+.pushmenu { /*this is the nav*/
+  background: #eef6fd;     /*Fondo del menú*/
+  text-align: center;
+  width: 300px;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+  position: fixed;
+}
+
+.pushmenu h3 {      /*Primera opción= EduLab*/
+  color: #f1f1f1;
+  font-size: 1.3em;
+  font-weight: 400;
+  padding: 15px 25px;
+  margin: 0;
+  background: #333;
+  height: 16px;
+}
+/*PERFIL*/
+.links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 0 0;
+  width: 100%;
+}
+
+.links li { 
+  margin-top: 0.5px;    /*Línea entre 1 y 2*/
+  height: 60px;
+  background-color: #d1256d;    /*PERFIL: Color caja*/
+ }
+
+.links li a {      /*Opciones del menú*/
+  position: relative;
+  display: block; /* drops the nav vertically*/
+  color: #f1f1f1;
+  font-size: 1.3em;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 14px;
+}
+
+.links li a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50px;   /*Izquierda*/
+  bottom: 0; /*Abajo*/
+  width: 0;   /*NO poner*/
+  height: 4px;    /*Grosor línea*/
+  background-color: #f1f1f1;      /*Color de la línea*/
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.links li a:hover:after { width: 70%; }    /*Largo de la línea*/
+
+.links li a:active { color: #dbdbdb; }
+
+/*2= PROYECTO*/
+.links2 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 0 0;
+  width: 100%;
+}
+
+.links2 li {  
+  margin-top: 1px;
+  height: 60px;
+  background-color: #00a8a9;    /* PROYECTO: Color de caja*/
+}
+
+.links2 li a {      /*Opciones del menú*/
+  position: relative;
+  display: block; /* drops the nav vertically*/
+  color: #f1f1f1;  /*Color letra*/
+  font-size: 1.3em;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 14px;
+}
+
+.links2 li a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50px;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  background-color: #f1f1f1;      /*Color de la línea*/
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.links2 li a:hover:after { width: 70%; }    /*Largo de la línea*/
+
+.links2 li a:active { color: #dbdbdb; }
+
+/*3= ESTADÍSTICAS*/
+.links3 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 0 0%;
+  width: 100%;
+}
+
+.links3 li {
+  margin-top: 1.5px;
+  height: 60px;
+  background-color: #4c134d;  /*ESTADÍSTICAS: Color caja*/
+}
+
+.links3 li a {      /*Opciones del menú*/
+  position: relative;
+  display: block; /* drops the nav vertically*/
+  color: #f1f1f1;
+  font-size: 1.3em;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 14px;
+}
+
+.links3 li a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50px;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  background-color: #f1f1f1;      /*Color de la línea*/
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.links3 li a:hover:after { width: 70%; }    /*Largo de la línea*/
+
+.links3 li a:active { color: #dbdbdb; }
+
+/*4= SALIR*/
+.links4 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 0 0%;
+  width: 100%;
+}
+
+.links4 li {
+  margin-top: 0.5px;
+  height: 60px;
+  background-color: #a41917;    /*SALIR: Color caja*/
+}
+
+.links4 li a {      /*Opciones del menú*/
+  position: relative;
+  display: block; /* drops the nav vertically*/
+  color: #f1f1f1;
+  font-size: 1.3em;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 14px;
+}
+
+.links4 li a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50px;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  background-color: #f1f1f1;      /*Color de la línea*/
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.links4 li a:hover:after { width: 70%; }    /*Largo de la línea*/
+
+.links4 li a:active { color: #dbdbdb; }
+
+/**/
+
+.pushmenu-left { left: -500px; }
+
+.pushmenu-left.pushmenu-open { left: 0; }
+
+.pushmenu-push {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+}
+
+.pushmenu-push-toright { left: 300px; }
+
+/*Transition*/
+
+.pushmenu, .pushmenu-push {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#nav_list {
+  background: url(../images/icon_nav.png) no-repeat left top;
+  cursor: pointer;
+  height: 27px;
+  width: 33px;
+  text-indent: -99999em;
+}
+
+nav-list.active { background-position: -331px top; }
+
+.buttonset {
+  background: #f0f8ff;      /*Barra superior*/
+  height: 16px;
+  padding: 10px 20px 20px;
+}
+
+section.content {
+  padding: 10px 20px;
+}

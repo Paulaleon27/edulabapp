@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html >
+<head>
+  	<meta charset="UTF-8">
+  	<title>Inicia Sesión | EduLab</title>
+  	<link rel="shortcut icon" href="images/eduLab1.png" width="1000" height="1000">
+    <link rel="stylesheet" href="css/styleiniciar.css">
+</head>
+<body>
+  <div class="login-wrap">
+  	<form action="scripts/Validar.php" action="menu.html" method="post" >
+	<div class="login-html"><br><br>
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Inicia Sesión</label><br><br>
+		<!--<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" 
+		class="tab">Sign Up</label>-->
+		<div class="login-form">
+			<div class="sign-in-htm">
+			<br>
+				<div class="group">
+					<!--<input type="radio" name="check1" id="estudiante"> ¿Eres estudiante?<br>
+					<input type="radio" name="check1" id="profesor"> ¿Eres profesor?<br>-->
+					<!--<input id="check1" type="radio" class="check">
+					<label name="check1" for="check1"><span class="icon"></span> ¿Eres estudiante?</label><br>
+					<input name="check1" id="check2" type="radio" class="check">
+					<label for="check2"><span class="icon"></span> ¿Eres profesor?</label><br>-->
+				</div>
+				<div class="group">
+					<label for="user" class="label">Usuario</label>
+					<input id="user" name="usuario" type="text" class="input" required>
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Contraseña</label>
+					<input id="pass" type="password" name="contrasena" class="input" data-type="password" required>
+				</div>
+				<br>
+				<!--<div class="group">
+					<input id="check" type="checkbox" class="check" >
+					<label for="check"><span class="icon"></span> Mantenerme Conectado</label><br>
+				</div>-->
+				<div class="group">
+					<input href="menu.php" type="submit" class="button" value="Entrar">
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<a href="recordarc.html">¿Olvidaste tu contraseña?</a>
+				</div>
+				<br>
+				<div class="foot-lnk">
+					<a href="Frmestudiante.html"> ¡REGÍSTRATE!</a>
+					<!--<a href="javascript:void(0);" onclick="window.open('Registrarse.html', 'popup', 'left=80px, top=200, width=900px, height=100px, toolbar=0, resizable=1')"  style="font-size:20px"> ¡REGÍSTRATE!</script></a>  -->
+				</div>
+			</div>
+		</div>
+	</div>
+	</form>
+  </div>
+</body>
+</html>

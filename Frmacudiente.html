@@ -1,0 +1,71 @@
+<!--FORMULARIO DE REGISTRO: Acudiente-->
+<!DOCTYPE html>
+<html >
+<head>
+  	<meta charset="UTF-8">
+  	<title>Registro acudiente | EduLab</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="css/stylera.css">
+	<link rel="shortcut icon" href="images/eduLab1.png" width="1000" height="1000">
+	<!--<link rel="stylesheet" href="css/cssv.css"> Ese archivo no se usa  --> 
+	<script src="scripts/validar.js"></script>
+</head>
+<body>
+  <div class="login-wrap">
+  	<form method="post" action="scripts/Registrar.php" onsubmit="return validar();" >
+	<div class="login-html"><br>
+		<input id="tab-2" name="tab" class="sign-up"><label for="tab-2" class="tab">DATOS DEL ACUDIENTE</label>
+		<br><br><br>
+		<div class="login-form">			
+			<div class="sign-up-htm">
+			    <div class="group">
+					<label for="nombre" class="label">nombres</label>
+				  	<input id="nombre" name="nombre" type="text" class="input">
+				</div>
+                <div class="group">
+					<label for="apellido" class="label">apellidos</label>
+					<input id="apellido" name="apellido" type="text" class="input" >
+				</div>
+                <div class="group">
+					<label for="cedula" class="label">cédula de ciudadanía</label>
+					<input id="cedula" name="cedula" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="sexo" class="label">Sexo</label><br>
+					<input type="radio" name="check1" id="femenino">Femenino
+					<input type="radio" name="check1" id="Masculino">Masculino
+					<input id="check1" type="radio" class="check"><br>
+				</div>
+				<div class="group">
+		    		<label for="edad" class="label">Edad</label>
+					<input id="edad" name="edad" type="text" class="input">
+				</div>
+				<div class="group">
+		    		<label for="celular" class="label">celular</label>
+					<input id="celular" name="celular" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="email" class="label">Correo electrónico</label>
+					<input id="email" name="email" type="email" class="input">
+				</div>
+				<div class="group">
+					<!--<input type="submit" class="button" value="enviar">-->
+					<input type="button" value="Aceptar" class="button" data-type="zoomout" />
+					<div class="overlay-container">
+						<div class="window-container zoomout">
+							<h3>¡Ya eres miembro de la familia!</h3> 
+							<a href="Frmestudiante.html" type="submit" class="close">Aceptar</a> 
+							<a href="Iniciar.html" type="submit" class="button1">Inicia Sesión</a>
+							<!--<div class="group">
+								<a type="submit" class="button">Inicia Sesión</a>
+							</div>-->
+						</div>
+					</div>
+					<script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.7.1.min.js"%3E%3C/script%3E'))</script>
+				</div>	
+		</div>
+ 	</form>
+ 	</div>
+ 	 <script type="text/javascript" src="js/ventana.js"></script>
+</body>
+</html>

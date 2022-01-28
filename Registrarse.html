@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Regístrate | EduLab</title>
+
+      <link rel="stylesheet" href="css/style registrarse.css">
+<link rel="shortcut icon" href="images/eduLab1.png" width="1000" height="1000">
+<script src="scripts/validar.js"></script>
+</head>
+
+<body>
+  <div class="login-wrap">
+  	<form action="scripts/Registrar.php" method="post" onsubmit="return validar();" >
+	<div class="login-html"><br>
+		<input id="tab-2" name="tab" class="sign-up"><label for="tab-2" class="tab">Regístrate</label>
+		<br><br><br>
+		<div class="login-form">			
+			<div class="sign-up-htm">
+				<div class="group">
+					<label for="nombre" class="label"><span style='background-color:#a2ce96'>Nombre</span></label>
+					<input id="nombre" name="nombre" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="apellido" class="label">Apellido</label>
+					<input id="apellido" name="apellido" "type="text" class="input" >
+				</div>
+				<div class="group">
+					<label for="celular" class="label">Celular</label>
+					<input id="celular" name="celular" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="telefono" class="label">Teléfono</label>
+					<input id="telefono" name="telefono" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="email" class="label">Correo electrónico</label>
+					<input id="email" name="email" type="email" class="input">
+				</div>
+				<div class="group">
+					<label for="usuario" class="label">Usuario</label>
+					<input id="usuario" name="usuario" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="contrasena" class="label">Contraseña</label>
+					<input id="contrasena" name="contrasena" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<label for="concontrasena" class="label">Confirma Contraseña</label>
+					<input id="concontrasena" name="concontrasena" type="password" class="input" data-type="password"> <br><br>
+				</div>
+				<div class="group">
+					<input type="submit" class="button" value="Enviar">
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<a href="Iniciar.html">¿Ya eres miembro?</a>
+				</div>
+			</div>
+		</div>
+	</div>
+ </form>
+ </div>
+</body>
+</html>
